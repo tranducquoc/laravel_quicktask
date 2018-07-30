@@ -12,11 +12,11 @@
 
     <!-- Scripts -->
     {{ Html::script('js/app.js') }}
+    {{ Html::script('js/logout.js') }}
 
 
     <!-- Fonts -->
     {{ Html::style('css/app.css') }}
-    {{ Html::style('css/bootsrap-theme-min.css') }}
 
 
 </head>
@@ -58,7 +58,8 @@
                                         @lang('auth.logout')
                                     </a>
 
-                                    {!! Form::open([ 'route' => 'logout', 'id' => 'logout-form']) !!}
+                                    {!! Form::open(['route' => 'logout', 'id'=> 'logout-form']) !!}
+                                    {!! Form::close() !!}
 
                                 </div>
                             </li>
